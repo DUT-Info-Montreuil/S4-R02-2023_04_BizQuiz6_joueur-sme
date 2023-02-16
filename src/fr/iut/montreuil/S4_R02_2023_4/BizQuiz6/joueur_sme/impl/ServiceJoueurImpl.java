@@ -21,6 +21,8 @@ public class ServiceJoueurImpl implements IserviceJoueur{
 							return null;
 						}
 					}
+					this.listeJoueursActuels.add(joueur);
+					this.listeJoueursClassement.add(joueur);
 		return joueur;
 	}
 
