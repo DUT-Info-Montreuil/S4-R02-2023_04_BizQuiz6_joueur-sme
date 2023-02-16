@@ -32,12 +32,18 @@ public class ServiceJoueurImpl implements IserviceJoueur{
 
 	@Override
 	public boolean suprimerJoueur(String pseudo) {
-		// TODO Auto-generated method stub
+			Iterator<JoueurDto> iterator=listeJoueursActuels.iterator();
+			while(iterator.hasNext()) {
+				if (iterator.next().getPseudo().equals(pseudo)) {
+					iterator.remove();
+					return true;
+				}
+			}
 		return false;
 	}
 
 	public ArrayList<JoueurDto> getListeJoueur() {
-		return listeJoueur;
+		return listeJoueursActuels;
 	}
 
 }
