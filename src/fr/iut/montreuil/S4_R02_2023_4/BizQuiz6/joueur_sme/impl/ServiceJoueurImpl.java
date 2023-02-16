@@ -15,12 +15,13 @@ public class ServiceJoueurImpl implements IserviceJoueur{
 	@Override
 	public JoueurDto ajouterJoueur(String nom, String pseudo, int anneeDeNaissance, String languePreferer,
 			String centreDInteretListe) {
-//			for(JoueurDto joueurDto:this.listeJoueursActuels) {
-//				if (joueurDto.equals(centreDInteretListe))) {
-//					
-//				}
-//			}
-		return null;
+			JoueurDto joueur= new JoueurDto(nom, pseudo, anneeDeNaissance, languePreferer, centreDInteretListe);
+					for(JoueurDto joueurListe:this.listeJoueursActuels) {
+						if (joueurListe.equals(joueur)) {
+							return null;
+						}
+					}
+		return joueur;
 	}
 
 	@Override
