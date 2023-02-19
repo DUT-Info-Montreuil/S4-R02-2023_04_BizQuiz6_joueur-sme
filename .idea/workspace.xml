@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca712888-f609-449b-9de2-07eec4ef9880" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6/joueur_sme/impl/ServiceJoueurImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6/joueur_sme/impl/ServiceJoueurImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LkNFUExCWB6fFrIhRxaRAnxNwl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/IntelliJ/QualityDev/objenesis-3.3.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6.joueur_sme.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ServiceJoueurImplTest">
+    <configuration name="ServiceJoueurImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="S4-R02-2023_04_BizQuiz6_joueur-sme" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl" />
+      <option name="MAIN_CLASS_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl.ServiceJoueurImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceJoueurImplTest.ajouterJoueur" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="S4-R02-2023_04_BizQuiz6_joueur-sme" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl" />
+      <option name="MAIN_CLASS_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl.ServiceJoueurImplTest" />
+      <option name="METHOD_NAME" value="ajouterJoueur" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceJoueurImplTest.ajouterJoueurMethodeFaite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="S4-R02-2023_04_BizQuiz6_joueur-sme" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl" />
+      <option name="MAIN_CLASS_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl.ServiceJoueurImplTest" />
+      <option name="METHOD_NAME" value="ajouterJoueurMethodeFaite" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceJoueurImplTest.suprimerJoueur" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="S4-R02-2023_04_BizQuiz6_joueur-sme" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl" />
+      <option name="MAIN_CLASS_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl.ServiceJoueurImplTest" />
+      <option name="METHOD_NAME" value="suprimerJoueur" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ServiceJoueurImplTest" />
+        <item itemvalue="JUnit.ServiceJoueurImplTest.ajouterJoueur" />
+        <item itemvalue="JUnit.ServiceJoueurImplTest.suprimerJoueur" />
+        <item itemvalue="JUnit.ServiceJoueurImplTest.ajouterJoueurMethodeFaite" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca712888-f609-449b-9de2-07eec4ef9880" name="Changes" comment="" />
+      <created>1676411016527</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676411016527</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
