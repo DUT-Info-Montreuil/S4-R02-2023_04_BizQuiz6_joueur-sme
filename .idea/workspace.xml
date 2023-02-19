@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca712888-f609-449b-9de2-07eec4ef9880" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6/joueur_sme/entities/dto/JoueurDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6/joueur_sme/entities/dto/JoueurDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6/joueur_sme/impl/ServiceJoueurImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6/joueur_sme/impl/ServiceJoueurImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6/joueur_sme/modeles/IserviceJoueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6/joueur_sme/modeles/IserviceJoueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6_sme/impl/Mock/ServiceJoueurMockOk.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6_sme/impl/Mock/ServiceJoueurMockOk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6_sme/impl/ServiceJoueurImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/fr/iut/montreuil/S4_R02_2023_4/BizQuiz6_sme/impl/ServiceJoueurImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,23 +36,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/IntelliJ/QualityDev/objenesis-3.3.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/IntelliJ/QualityDev/objenesis-3.3.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -56,7 +61,7 @@
       <recent name="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6.joueur_sme.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ServiceJoueurImplTest">
+  <component name="RunManager" selected="JUnit.ServiceJoueurImplTest.supprimerJoueurMethode">
     <configuration name="ServiceJoueurImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="S4-R02-2023_04_BizQuiz6_joueur-sme" />
       <extension name="coverage">
@@ -88,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceJoueurImplTest.ajouterJoueurMethodeFaite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceJoueurImplTest.ajouterJoueurMethode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="S4-R02-2023_04_BizQuiz6_joueur-sme" />
       <extension name="coverage">
         <pattern>
@@ -98,7 +103,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl" />
       <option name="MAIN_CLASS_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl.ServiceJoueurImplTest" />
-      <option name="METHOD_NAME" value="ajouterJoueurMethodeFaite" />
+      <option name="METHOD_NAME" value="ajouterJoueurMethode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceJoueurImplTest.supprimerJoueurMethode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="S4-R02-2023_04_BizQuiz6_joueur-sme" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl" />
+      <option name="MAIN_CLASS_NAME" value="fr.iut.montreuil.S4_R02_2023_4.BizQuiz6_sme.impl.ServiceJoueurImplTest" />
+      <option name="METHOD_NAME" value="supprimerJoueurMethode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,10 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ServiceJoueurImplTest" />
+        <item itemvalue="JUnit.ServiceJoueurImplTest.supprimerJoueurMethode" />
+        <item itemvalue="JUnit.ServiceJoueurImplTest.ajouterJoueurMethode" />
         <item itemvalue="JUnit.ServiceJoueurImplTest.ajouterJoueur" />
+        <item itemvalue="JUnit.ServiceJoueurImplTest" />
         <item itemvalue="JUnit.ServiceJoueurImplTest.suprimerJoueur" />
-        <item itemvalue="JUnit.ServiceJoueurImplTest.ajouterJoueurMethodeFaite" />
       </list>
     </recent_temporary>
   </component>

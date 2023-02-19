@@ -33,7 +33,7 @@ public class ServiceJoueurImpl implements IserviceJoueur {
     }
 
     @Override
-    public boolean suprimerJoueur(String pseudo) {
+    public boolean supprimerJoueur(String pseudo) {
         Iterator<JoueurDto> iterator = listeJoueursActuels.iterator();
         while (iterator.hasNext()) {
             if (iterator.next().getPseudo().equals(pseudo)) {

@@ -57,8 +57,7 @@ public class JoueurDto {
 	@Override
 	public String toString() {
 		return "JoueurDto [nom=" + nom + ", pseudo=" + pseudo + ", anneeDeNaissance=" + anneeDeNaissance
-				+ ", languePreferer=" + languePreferer + ", centreDInteretListe=" + centreDInteretListe
-				+ ", centreDinteret=" + Arrays.toString(centreDinteret) + "]";
+				+ ", languePreferer=" + languePreferer + ", centreDinteret=" + Arrays.toString(centreDinteret) + "]";
 	}
 	@Override
 	public int hashCode() {
