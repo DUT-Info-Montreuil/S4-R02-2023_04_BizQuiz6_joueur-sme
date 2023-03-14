@@ -61,7 +61,11 @@ public class JoueurDto {
 	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(pseudo);
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + Arrays.hashCode(centreDinteret);
+		result = prime * result + Objects.hash(anneeDeNaissance, centreDInteretListe, languePreferer, nom, pseudo);
+		return result;
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -72,7 +76,12 @@ public class JoueurDto {
 		if (getClass() != obj.getClass())
 			return false;
 		JoueurDto other = (JoueurDto) obj;
-		return Objects.equals(pseudo, other.pseudo);
+		return anneeDeNaissance == other.anneeDeNaissance
+				&& Objects.equals(centreDInteretListe, other.centreDInteretListe)
+				&& Arrays.equals(centreDinteret, other.centreDinteret)
+				&& Objects.equals(languePreferer, other.languePreferer) && Objects.equals(nom, other.nom)
+				&& Objects.equals(pseudo, other.pseudo);
 	}
+	
 
 }
