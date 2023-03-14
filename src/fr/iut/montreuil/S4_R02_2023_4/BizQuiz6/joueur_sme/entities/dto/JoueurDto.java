@@ -6,10 +6,10 @@ import java.util.Objects;
 public class JoueurDto {
 	private String nom,pseudo;
 	private int anneeDeNaissance;
-	private String languePreferer;
+	private Langues languePreferer;
 	private String centreDInteretListe;
 	private String[] centreDinteret;
-	public JoueurDto(String nom, String pseudo, int anneeDeNaissance, String languePreferer, String centreDInteretListe) {
+	public JoueurDto(String nom, String pseudo, int anneeDeNaissance, Langues languePreferer, String centreDInteretListe) {
 	
 		this.nom = nom;
 		this.pseudo = pseudo;
@@ -37,9 +37,9 @@ public class JoueurDto {
 		this.anneeDeNaissance = anneeDeNaissance;
 	}
 	public String getLanguePreferer() {
-		return languePreferer;
+		return languePreferer.toString();
 	}
-	public void setLanguePreferer(String languePreferer) {
+	public void setLanguePreferer(Langues languePreferer) {
 		this.languePreferer = languePreferer;
 	}
 	public String getCentreDInteretListe() {
