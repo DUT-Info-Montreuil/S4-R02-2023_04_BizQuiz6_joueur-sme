@@ -23,9 +23,14 @@ public class ServiceJoueurImpl implements IserviceJoueur {
                 throw new PseudoDejaExistantException();
             }
         }
-        this.listeJoueursActuels.add(joueur);
-        this.listeJoueursClassement.add(joueur);
-        return joueur;
+        if(nom==null||pseudo==null||anneeDeNaissance<0||languePreferer==null||centreDInteretListe==null){
+        	return null;
+        }else {
+        	this.listeJoueursActuels.add(joueur);
+            this.listeJoueursClassement.add(joueur);
+            return joueur;
+        }
+        
     }
 
     @Override
