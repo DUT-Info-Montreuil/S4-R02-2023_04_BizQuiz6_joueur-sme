@@ -39,7 +39,7 @@ public class ServiceJoueurImplTest {
     void ajouterJoueur() {
         JoueurDto j2 = new JoueurDto("nono", "nono78hls", 2003, Langue.FRANCAIS, "foot, manga");
         JoueurDto j3 = new JoueurDto("Nono", "Nono78hls", 2003, Langue.FRANCAIS, "foot, manga");
-        assertEquals(this.j1, this.serviceJoueurMockOk.ajouterJoueur("nono", "Nono78hls", 2003, "francais", "foot, manga"));
+        assertEquals(this.j1, this.serviceJoueurMockOk.ajouterJoueur("nono", "Nono78hls", 2003, Langue.FRANCAIS, "foot, manga"));
         assertNotEquals(this.j1, j2, "Voir si c'est différent lorsque le pseudo se ressemble");
         assertEquals(this.j1, j3, "voir si c'est le meme objet lorsque ce n'est pas le pseudo qui est different");
         assertEquals(null, this.serviceJoueurMockKo.ajouterJoueur(null, null, 2000, null, null));
