@@ -36,8 +36,8 @@ public class JoueurDto {
 	public void setAnneeDeNaissance(int anneeDeNaissance) {
 		this.anneeDeNaissance = anneeDeNaissance;
 	}
-	public String getLanguePreferer() {
-		return languePreferer.toString();
+	public Langue getLanguePreferer() {
+		return languePreferer;
 	}
 	public void setLanguePreferer(Langue languePreferer) {
 		this.languePreferer = languePreferer;
