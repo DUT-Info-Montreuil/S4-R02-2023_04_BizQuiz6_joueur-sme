@@ -2,9 +2,10 @@ package fr.iut.montreuil.S4_R02_2023_4.BizQuiz6.joueur_sme.impl;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
+import fr.iut.montreuil.S4_R02_2023_4.BizQuiz6.joueur_sme.entities.dto.Chrono;
 import fr.iut.montreuil.S4_R02_2023_4.BizQuiz6.joueur_sme.entities.dto.JoueurDto;
+import fr.iut.montreuil.S4_R02_2023_4.BizQuiz6.joueur_sme.entities.dto.StatistiqueDTO;
 import fr.iut.montreuil.S4_R02_2023_4.BizQuiz6.joueur_sme.entities.dto.Langue;
 import fr.iut.montreuil.S4_R02_2023_4.BizQuiz6.joueur_sme.modeles.IserviceJoueur;
 import fr.iut.montreuil.S4_R02_2023_4.BizQuiz6.joueur_sme.modeles.PseudoDejaExistantException;
@@ -49,6 +50,34 @@ public class ServiceJoueurImpl implements IserviceJoueur {
             }
         }
         return false;
+    }
+
+    public StatistiqueDTO fournirStatsJoueur(JoueurDto joueurDto, int points, Chrono temps){
+        for(JoueurDto joueur : this.listeJoueursActuels){
+            if(this.listeJoueursActuels.equals(joueur)){
+                joueur.getStats().add(new StatistiqueDTO(points, temps));
+
+                joueur.setNbPartiesJouer(joueur.getNbPartiesJouer()+1);
+
+                long ChronoAuTotal = joueur.getMoyenneChrono().getDureeSec() + temps.getDureeSec();
+                Chrono nouveauTempsMoyen = new Chrono();
+                nouveauTempsMoyen.getDureeTxt(ChronoAuTotal);
+                joueur.setMoyenneChrono(nouveauTempsMoyen);
+
+                double moyennePoints = 0;
+                for(int i =0; i<joueur.getStats().size(); i++)
+                    moyennePoints += joueur.getStats().get(i).getNbBonnesReponses();
+                moyennePoints = moyennePoints / joueur.getStats().size();
+                joueur.setMoyennePoints(moyennePoints);
+
+                return joueur.getStats().get(joueur.getStats().size());
+            }
+        }
+        return null;
+    }
+
+    public ArrayList<StatistiqueDTO> gestionScoreJoueur(JoueurDto joueurDto){
+        return joueurDto.getStats();
     }
 
     public ArrayList<JoueurDto> getListeJoueur() {

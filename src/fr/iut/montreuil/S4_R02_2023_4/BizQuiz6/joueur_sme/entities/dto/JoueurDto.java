@@ -1,5 +1,6 @@
 package fr.iut.montreuil.S4_R02_2023_4.BizQuiz6.joueur_sme.entities.dto;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -9,14 +10,23 @@ public class JoueurDto {
 	private Langue languePreferer;
 	private String centreDInteretListe;
 	private String[] centreDinteret;
+	private ArrayList<StatistiqueDTO> stats;
+    private int nbPartiesJouer;
+	private Chrono moyenneChrono;
+	private double moyennePoints;
+    
 	public JoueurDto(String nom, String pseudo, int anneeDeNaissance, Langue languePreferer, String centreDInteretListe) {
-	
+
 		this.nom = nom;
 		this.pseudo = pseudo;
 		this.anneeDeNaissance = anneeDeNaissance;
 		this.languePreferer = languePreferer;
 		this.centreDInteretListe = centreDInteretListe;
 		this.centreDinteret = centreDInteretListe.trim().split(",");
+		this.stats = new ArrayList<>();
+		this.nbPartiesJouer = 0;
+		this.moyenneChrono = null;
+		this.moyennePoints = 0;
 	}
 	public String getNom() {
 		return nom;
@@ -54,6 +64,35 @@ public class JoueurDto {
 	public void setCentreDinteret(String[] centreDinteret) {
 		this.centreDinteret = centreDinteret;
 	}
+
+	public ArrayList<StatistiqueDTO> getStats() {
+		return stats;
+	}
+
+	public int getNbPartiesJouer() {
+		return this.nbPartiesJouer;
+	}
+
+	public Chrono getMoyenneChrono() {
+		return this.moyenneChrono;
+	}
+
+	public double getMoyennePoints() {
+		return this.moyennePoints;
+	}
+
+	public void setNbPartiesJouer(int nbPartiesJouer) {
+		this.nbPartiesJouer = nbPartiesJouer;
+	}
+
+	public void setMoyenneChrono(Chrono moyenneChrono) {
+		this.moyenneChrono = moyenneChrono;
+	}
+
+	public void setMoyennePoints(double moyennePoints) {
+		this.moyennePoints = moyennePoints;
+	}
+
 	@Override
 	public String toString() {
 		return "JoueurDto [nom=" + nom + ", pseudo=" + pseudo + ", anneeDeNaissance=" + anneeDeNaissance
