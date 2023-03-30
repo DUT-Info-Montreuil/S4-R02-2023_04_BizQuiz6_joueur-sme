@@ -83,7 +83,7 @@ public class ServiceJoueurImplTest {
         Mockito.when(chrono1.getDureeSec()).thenReturn(3600L); // 1 heure
         StatistiqueDTO stats1 = serviceJoueurMockOk.fournirStatsJoueur(joueur, 10, chrono1);
         assertNotNull(stats1,"on vérifie qu'un onbjet StatisqueDTO est bien retourner");
-        assertEquals(10, stats1.getNbBonnesReponses(),"on vérifie que le nombre de points est crrect");
+        assertEquals(10, stats1.getNbBonnesReponses(),"on vérifie que le nombre de points est correct");
         assertNotEquals(5,stats1.getNbBonnesReponses(),"Test qui vériefie que les points ne sont pas corrects");
         assertEquals(chrono1,stats1.getChrono(),"on vérifie que le bon chrono est retourner");
         assertEquals(3600, chrono1.getDureeSec(),"on vérifie que le temps est bon");

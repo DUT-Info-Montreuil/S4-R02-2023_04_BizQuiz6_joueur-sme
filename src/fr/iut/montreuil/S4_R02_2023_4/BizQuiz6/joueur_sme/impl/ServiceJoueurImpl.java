@@ -59,9 +59,10 @@ public class ServiceJoueurImpl implements IserviceJoueur {
 
                 joueur.setNbPartiesJouer(joueur.getNbPartiesJouer()+1);
 
-                long ChronoAuTotal = joueur.getMoyenneChrono().getDureeSec() + temps.getDureeSec();
+                long chronoAuTotal = joueur.getMoyenneChrono().getDureeSec() + temps.getDureeSec();
+                chronoAuTotal /= joueur.getNbPartiesJouer();
                 Chrono nouveauTempsMoyen = new Chrono();
-                nouveauTempsMoyen.getDureeTxt(ChronoAuTotal);
+                nouveauTempsMoyen.getDureeTxt(chronoAuTotal);
                 joueur.setMoyenneChrono(nouveauTempsMoyen);
 
                 double moyennePoints = 0;
