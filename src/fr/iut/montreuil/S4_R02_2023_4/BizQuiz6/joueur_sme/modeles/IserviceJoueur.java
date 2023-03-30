@@ -14,7 +14,7 @@ public interface IserviceJoueur {
 
 	public boolean supprimerJoueur(String pseudo);
 
-	public StatistiqueDTO fournirStatsJoueur(JoueurDto joueurDto, int points, Chrono temps);
+	public StatistiqueDTO gestionScoreJoueur(JoueurDto joueurDto, int points, Chrono temps);
 
-	public ArrayList<StatistiqueDTO> gestionScoreJoueur(JoueurDto joueurDto);
+	public ArrayList<StatistiqueDTO> fournirStatJoueur(JoueurDto joueurDto);
 }

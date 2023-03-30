@@ -52,7 +52,7 @@ public class ServiceJoueurImpl implements IserviceJoueur {
         return false;
     }
 
-    public StatistiqueDTO fournirStatsJoueur(JoueurDto joueurDto, int points, Chrono temps){
+    public StatistiqueDTO gestionScoreJoueur(JoueurDto joueurDto, int points, Chrono temps){
         for(JoueurDto joueur : this.listeJoueursActuels){
             if(this.listeJoueursActuels.equals(joueur)){
                 joueur.getStats().add(new StatistiqueDTO(points, temps));
@@ -77,7 +77,7 @@ public class ServiceJoueurImpl implements IserviceJoueur {
         return null;
     }
 
-    public ArrayList<StatistiqueDTO> gestionScoreJoueur(JoueurDto joueurDto){
+    public ArrayList<StatistiqueDTO> fournirStatJoueur(JoueurDto joueurDto){
         return joueurDto.getStats();
     }
 

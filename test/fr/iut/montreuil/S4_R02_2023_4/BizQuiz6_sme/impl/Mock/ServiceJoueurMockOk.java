@@ -30,13 +30,13 @@ public class ServiceJoueurMockOk implements IserviceJoueur {
     }
 
 	@Override
-	public StatistiqueDTO fournirStatsJoueur(JoueurDto joueurDto, int points, Chrono temps) {
+	public StatistiqueDTO gestionScoreJoueur(JoueurDto joueurDto, int points, Chrono temps) {
 		
 		return new StatistiqueDTO(10, temps);
 	}
 
 	@Override
-	public ArrayList<StatistiqueDTO> gestionScoreJoueur(JoueurDto joueurDto) {
+	public ArrayList<StatistiqueDTO> fournirStatJoueur(JoueurDto joueurDto) {
 		// TODO Auto-generated method stub
 		return null;
 	}

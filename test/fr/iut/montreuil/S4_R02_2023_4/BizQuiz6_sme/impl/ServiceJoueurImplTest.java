@@ -81,7 +81,7 @@ public class ServiceJoueurImplTest {
     	joueur.setNbPartiesJouer(1);
         Chrono chrono1 = Mockito.mock(Chrono.class);
         Mockito.when(chrono1.getDureeSec()).thenReturn(3600L); // 1 heure
-        StatistiqueDTO stats1 = serviceJoueurMockOk.fournirStatsJoueur(joueur, 10, chrono1);
+        StatistiqueDTO stats1 = serviceJoueurMockOk.gestionScoreJoueur(joueur, 10, chrono1);
         assertNotNull(stats1,"on vérifie qu'un onbjet StatisqueDTO est bien retourner");
         assertEquals(10, stats1.getNbBonnesReponses(),"on vérifie que le nombre de points est correct");
         assertNotEquals(5,stats1.getNbBonnesReponses(),"Test qui vériefie que les points ne sont pas corrects");
@@ -95,9 +95,9 @@ public class ServiceJoueurImplTest {
         ServiceJoueurImpl service = new ServiceJoueurImpl();
         JoueurDto joueur = new JoueurDto("Dupont", "dupont", 1990, Langue.FRANCAIS, "Sport");
         Chrono chrono = Mockito.mock(Chrono.class);
-        Mockito.when(serviceJoueurMock.fournirStatsJoueur(joueur, 10, chrono)).thenReturn(null);
+        Mockito.when(serviceJoueurMock.gestionScoreJoueur(joueur, 10, chrono)).thenReturn(null);
       
-        StatistiqueDTO stats = service.fournirStatsJoueur(joueur, 10, chrono);
+        StatistiqueDTO stats = service.gestionScoreJoueur(joueur, 10, chrono);
         assertNull(stats);
         assertEquals(0, joueur.getStats().size());
         assertEquals(0, joueur.getNbPartiesJouer());
@@ -119,7 +119,7 @@ public class ServiceJoueurImplTest {
         Mockito.when(chrono2.getDureeSec()).thenReturn(1800L); // 30 minutes
         StatistiqueDTO stats2 = new StatistiqueDTO(8, chrono2);
         joueur.getStats().add(stats2);
-        ArrayList<StatistiqueDTO> stats = service.gestionScoreJoueur(joueur);
+        ArrayList<StatistiqueDTO> stats = service.fournirStatJoueur(joueur);
         assertNotNull(stats);
         assertEquals(2, stats.size());
         assertEquals(stats1, stats.get(0));
